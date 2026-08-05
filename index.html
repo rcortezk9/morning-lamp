@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#faf6ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1714" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Daily Reading — Wednesday, August 5, 2026</title>
+<style>:root {
+  --bg: #faf6ef;
+  --fg: #2b2724;
+  --muted: #8a8078;
+  --word: rgba(196, 148, 62, 0.38);
+  --verse: rgba(196, 148, 62, 0.11);
+  --rule: rgba(0, 0, 0, 0.10);
+  --bar: rgba(250, 246, 239, 0.94);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1714;
+    --fg: #e6ddd0;
+    --muted: #8f857a;
+    --word: rgba(214, 168, 84, 0.34);
+    --verse: rgba(214, 168, 84, 0.09);
+    --rule: rgba(255, 255, 255, 0.10);
+    --bar: rgba(26, 23, 20, 0.94);
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Georgia, "Iowan Old Style", serif;
+  font-size: 1.30rem;
+  line-height: 1.85;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: 2rem 1.4rem 9rem;
+}
+
+header { margin-bottom: 2.2rem; }
+
+.date {
+  font-size: 0.8rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.refs {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+
+.reading + .reading {
+  margin-top: 2.2rem;
+  padding-top: 2.2rem;
+  border-top: 1px solid var(--rule);
+}
+
+.verse {
+  border-radius: 4px;
+  transition: background-color 220ms ease;
+  padding: 1px 0;
+}
+
+.verse.active { background: var(--verse); }
+
+.vn {
+  font-size: 0.62em;
+  vertical-align: 0.45em;
+  color: var(--muted);
+  margin-right: 0.18em;
+  user-select: none;
+}
+
+w {
+  display: inline;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 90ms linear;
+}
+
+w.on { background: var(--word); }
+
+#bar {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  padding: 0.85rem 1rem calc(0.85rem + env(safe-area-inset-bottom));
+  background: var(--bar);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+#play {
+  flex: 0 0 auto;
+  width: 3.3rem; height: 3.3rem;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--fg);
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+#seek { flex: 1 1 auto; accent-color: var(--muted); }
+
+.archive {
+  margin-top: 3.5rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.archive a { color: var(--muted); margin-right: 0.9rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .verse, w { transition: none; }
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="date">Wednesday, August 5, 2026</div>
+<div class="refs">1 Corinthians 16:4-12 &nbsp;·&nbsp; Matthew 21:28-32</div>
+</header>
+<section class="reading"><span class="verse" data-v="0"><span class="vn">4</span><w data-w="0">But</w> <w data-w="1">if</w> <w data-w="2">it</w> <w data-w="3">is</w> <w data-w="4">fitting</w> <w data-w="5">that</w> <w data-w="6">I</w> <w data-w="7">go</w> <w data-w="8">also,</w> <w data-w="9">they</w> <w data-w="10">will</w> <w data-w="11">go</w> <w data-w="12">with</w> <w data-w="13">me.</w></span> <span class="verse" data-v="1"><span class="vn">5</span><w data-w="14">Now</w> <w data-w="15">I</w> <w data-w="16">will</w> <w data-w="17">come</w> <w data-w="18">to</w> <w data-w="19">you</w> <w data-w="20">when</w> <w data-w="21">I</w> <w data-w="22">pass</w> <w data-w="23">through</w> <w data-w="24">Macedonia</w> <w data-w="25">(for</w> <w data-w="26">I</w> <w data-w="27">am</w> <w data-w="28">passing</w> <w data-w="29">through</w> <w data-w="30">Macedonia).</w></span> <span class="verse" data-v="2"><span class="vn">6</span><w data-w="31">And</w> <w data-w="32">it</w> <w data-w="33">may</w> <w data-w="34">be</w> <w data-w="35">that</w> <w data-w="36">I</w> <w data-w="37">will</w> <w data-w="38">remain,</w> <w data-w="39">or</w> <w data-w="40">even</w> <w data-w="41">spend</w> <w data-w="42">the</w> <w data-w="43">winter</w> <w data-w="44">with</w> <w data-w="45">you,</w> <w data-w="46">that</w> <w data-w="47">you</w> <w data-w="48">may</w> <w data-w="49">send</w> <w data-w="50">me</w> <w data-w="51">on</w> <w data-w="52">my</w> <w data-w="53">journey,</w> <w data-w="54">wherever</w> <w data-w="55">I</w> <w data-w="56">go.</w></span> <span class="verse" data-v="3"><span class="vn">7</span><w data-w="57">For</w> <w data-w="58">I</w> <w data-w="59">do</w> <w data-w="60">not</w> <w data-w="61">wish</w> <w data-w="62">to</w> <w data-w="63">see</w> <w data-w="64">you</w> <w data-w="65">now</w> <w data-w="66">on</w> <w data-w="67">the</w> <w data-w="68">way;</w> <w data-w="69">but</w> <w data-w="70">I</w> <w data-w="71">hope</w> <w data-w="72">to</w> <w data-w="73">stay</w> <w data-w="74">a</w> <w data-w="75">while</w> <w data-w="76">with</w> <w data-w="77">you,</w> <w data-w="78">if</w> <w data-w="79">the</w> <w data-w="80">Lord</w> <w data-w="81">permits.</w></span> <span class="verse" data-v="4"><span class="vn">8</span><w data-w="82">But</w> <w data-w="83">I</w> <w data-w="84">will</w> <w data-w="85">tarry</w> <w data-w="86">in</w> <w data-w="87">Ephesus</w> <w data-w="88">until</w> <w data-w="89">Pentecost.</w></span> <span class="verse" data-v="5"><span class="vn">9</span><w data-w="90">For</w> <w data-w="91">a</w> <w data-w="92">great</w> <w data-w="93">and</w> <w data-w="94">effective</w> <w data-w="95">door</w> <w data-w="96">has</w> <w data-w="97">opened</w> <w data-w="98">to</w> <w data-w="99">me,</w> <w data-w="100">and</w> <w data-w="101">there</w> <w data-w="102">are</w> <w data-w="103">many</w> <w data-w="104">adversaries.</w></span> <span class="verse" data-v="6"><span class="vn">10</span><w data-w="105">And</w> <w data-w="106">if</w> <w data-w="107">Timothy</w> <w data-w="108">comes,</w> <w data-w="109">see</w> <w data-w="110">that</w> <w data-w="111">he</w> <w data-w="112">may</w> <w data-w="113">be</w> <w data-w="114">with</w> <w data-w="115">you</w> <w data-w="116">without</w> <w data-w="117">fear;</w> <w data-w="118">for</w> <w data-w="119">he</w> <w data-w="120">does</w> <w data-w="121">the</w> <w data-w="122">work</w> <w data-w="123">of</w> <w data-w="124">the</w> <w data-w="125">Lord,</w> <w data-w="126">as</w> <w data-w="127">I</w> <w data-w="128">also</w> <w data-w="129">do</w> <w data-w="130">.</w></span> <span class="verse" data-v="7"><span class="vn">11</span><w data-w="131">Therefore</w> <w data-w="132">let</w> <w data-w="133">no</w> <w data-w="134">one</w> <w data-w="135">despise</w> <w data-w="136">him.</w> <w data-w="137">But</w> <w data-w="138">send</w> <w data-w="139">him</w> <w data-w="140">on</w> <w data-w="141">his</w> <w data-w="142">journey</w> <w data-w="143">in</w> <w data-w="144">peace,</w> <w data-w="145">that</w> <w data-w="146">he</w> <w data-w="147">may</w> <w data-w="148">come</w> <w data-w="149">to</w> <w data-w="150">me;</w> <w data-w="151">for</w> <w data-w="152">I</w> <w data-w="153">am</w> <w data-w="154">waiting</w> <w data-w="155">for</w> <w data-w="156">him</w> <w data-w="157">with</w> <w data-w="158">the</w> <w data-w="159">brethren.</w></span> <span class="verse" data-v="8"><span class="vn">12</span><w data-w="160">Now</w> <w data-w="161">concerning</w> <w data-w="162">our</w> <w data-w="163">brother</w> <w data-w="164">Apollos,</w> <w data-w="165">I</w> <w data-w="166">strongly</w> <w data-w="167">urged</w> <w data-w="168">him</w> <w data-w="169">to</w> <w data-w="170">come</w> <w data-w="171">to</w> <w data-w="172">you</w> <w data-w="173">with</w> <w data-w="174">the</w> <w data-w="175">brethren,</w> <w data-w="176">but</w> <w data-w="177">he</w> <w data-w="178">was</w> <w data-w="179">quite</w> <w data-w="180">unwilling</w> <w data-w="181">to</w> <w data-w="182">come</w> <w data-w="183">at</w> <w data-w="184">this</w> <w data-w="185">time;</w> <w data-w="186">however,</w> <w data-w="187">he</w> <w data-w="188">will</w> <w data-w="189">come</w> <w data-w="190">when</w> <w data-w="191">he</w> <w data-w="192">has</w> <w data-w="193">a</w> <w data-w="194">convenient</w> <w data-w="195">time.</w></span> </section><section class="reading"><span class="verse" data-v="9"><span class="vn">28</span><w data-w="196">But</w> <w data-w="197">what</w> <w data-w="198">do</w> <w data-w="199">you</w> <w data-w="200">think?</w> <w data-w="201">A</w> <w data-w="202">man</w> <w data-w="203">had</w> <w data-w="204">two</w> <w data-w="205">sons,</w> <w data-w="206">and</w> <w data-w="207">he</w> <w data-w="208">came</w> <w data-w="209">to</w> <w data-w="210">the</w> <w data-w="211">first</w> <w data-w="212">and</w> <w data-w="213">said,</w> <w data-w="214">Son,</w> <w data-w="215">go,</w> <w data-w="216">work</w> <w data-w="217">today</w> <w data-w="218">in</w> <w data-w="219">my</w> <w data-w="220">vineyard.&#x27;</w></span> <span class="verse" data-v="10"><span class="vn">29</span><w data-w="221">He</w> <w data-w="222">answered</w> <w data-w="223">and</w> <w data-w="224">said,</w> <w data-w="225">I</w> <w data-w="226">will</w> <w data-w="227">not,&#x27;</w> <w data-w="228">but</w> <w data-w="229">afterward</w> <w data-w="230">he</w> <w data-w="231">regretted</w> <w data-w="232">it</w> <w data-w="233">and</w> <w data-w="234">went.</w></span> <span class="verse" data-v="11"><span class="vn">30</span><w data-w="235">Then</w> <w data-w="236">he</w> <w data-w="237">came</w> <w data-w="238">to</w> <w data-w="239">the</w> <w data-w="240">second</w> <w data-w="241">and</w> <w data-w="242">said</w> <w data-w="243">likewise.</w> <w data-w="244">And</w> <w data-w="245">he</w> <w data-w="246">answered</w> <w data-w="247">and</w> <w data-w="248">said,</w> <w data-w="249">I</w> <w data-w="250">go,</w> <w data-w="251">sir,&#x27;</w> <w data-w="252">but</w> <w data-w="253">he</w> <w data-w="254">did</w> <w data-w="255">not</w> <w data-w="256">go.</w></span> <span class="verse" data-v="12"><span class="vn">31</span><w data-w="257">Which</w> <w data-w="258">of</w> <w data-w="259">the</w> <w data-w="260">two</w> <w data-w="261">did</w> <w data-w="262">the</w> <w data-w="263">will</w> <w data-w="264">of</w> <w data-w="265">his</w> <w data-w="266">father?</w> <w data-w="267">They</w> <w data-w="268">said</w> <w data-w="269">to</w> <w data-w="270">Him,</w> <w data-w="271">The</w> <w data-w="272">first.</w> <w data-w="273">Jesus</w> <w data-w="274">said</w> <w data-w="275">to</w> <w data-w="276">them,</w> <w data-w="277">Assuredly,</w> <w data-w="278">I</w> <w data-w="279">say</w> <w data-w="280">to</w> <w data-w="281">you</w> <w data-w="282">that</w> <w data-w="283">tax</w> <w data-w="284">collectors</w> <w data-w="285">and</w> <w data-w="286">harlots</w> <w data-w="287">enter</w> <w data-w="288">the</w> <w data-w="289">kingdom</w> <w data-w="290">of</w> <w data-w="291">God</w> <w data-w="292">before</w> <w data-w="293">you.</w></span> <span class="verse" data-v="13"><span class="vn">32</span><w data-w="294">For</w> <w data-w="295">John</w> <w data-w="296">came</w> <w data-w="297">to</w> <w data-w="298">you</w> <w data-w="299">in</w> <w data-w="300">the</w> <w data-w="301">way</w> <w data-w="302">of</w> <w data-w="303">righteousness,</w> <w data-w="304">and</w> <w data-w="305">you</w> <w data-w="306">did</w> <w data-w="307">not</w> <w data-w="308">believe</w> <w data-w="309">him;</w> <w data-w="310">but</w> <w data-w="311">tax</w> <w data-w="312">collectors</w> <w data-w="313">and</w> <w data-w="314">harlots</w> <w data-w="315">believed</w> <w data-w="316">him;</w> <w data-w="317">and</w> <w data-w="318">when</w> <w data-w="319">you</w> <w data-w="320">saw</w> <w data-w="321">it,</w> <w data-w="322">you</w> <w data-w="323">did</w> <w data-w="324">not</w> <w data-w="325">afterward</w> <w data-w="326">relent</w> <w data-w="327">and</w> <w data-w="328">believe</w> <w data-w="329">him.</w></span> </section>
+
+</main>
+<div id="bar">
+<button id="play" aria-label="Play">&#9654;</button>
+<input id="seek" type="range" min="0" max="1000" value="0" step="1" aria-label="Seek">
+</div>
+<audio id="audio" src="reading.mp3" preload="metadata" playsinline></audio>
+<script type="application/json" id="timings">[{"s":50,"e":340,"v":0},{"s":340,"e":460,"v":0},{"s":460,"e":720,"v":0},{"s":720,"e":820,"v":0},{"s":820,"e":1470,"v":0},{"s":1470,"e":1820,"v":0},{"s":1820,"e":1880,"v":0},{"s":1880,"e":2480,"v":0},{"s":2480,"e":2730,"v":0},{"s":2730,"e":3060,"v":0},{"s":3060,"e":3400,"v":0},{"s":3400,"e":3570,"v":0},{"s":3570,"e":3640,"v":0},{"s":3640,"e":4360,"v":0},{"s":4360,"e":4820,"v":1},{"s":4820,"e":4900,"v":1},{"s":4900,"e":5260,"v":1},{"s":5260,"e":5620,"v":1},{"s":5620,"e":5800,"v":1},{"s":5800,"e":6060,"v":1},{"s":6060,"e":6290,"v":1},{"s":6290,"e":6880,"v":1},{"s":6880,"e":7070,"v":1},{"s":7070,"e":7510,"v":1},{"s":7510,"e":8540,"v":1},{"s":8540,"e":8900,"v":1},{"s":8900,"e":9260,"v":1},{"s":9260,"e":9270,"v":1},{"s":9270,"e":10130,"v":1},{"s":10130,"e":11000,"v":1},{"s":11000,"e":12460,"v":1},{"s":12460,"e":12750,"v":2},{"s":12750,"e":12860,"v":2},{"s":12860,"e":13180,"v":2},{"s":13180,"e":13260,"v":2},{"s":13260,"e":13570,"v":2},{"s":13570,"e":13660,"v":2},{"s":13660,"e":13980,"v":2},{"s":13980,"e":14780,"v":2},{"s":14780,"e":15100,"v":2},{"s":15100,"e":15170,"v":2},{"s":15170,"e":15510,"v":2},{"s":15510,"e":15730,"v":2},{"s":15730,"e":16220,"v":2},{"s":16220,"e":16540,"v":2},{"s":16540,"e":17260,"v":2},{"s":17260,"e":17370,"v":2},{"s":17370,"e":17500,"v":2},{"s":17500,"e":17920,"v":2},{"s":17920,"e":18220,"v":2},{"s":18220,"e":18560,"v":2},{"s":18560,"e":18680,"v":2},{"s":18680,"e":18910,"v":2},{"s":18910,"e":19660,"v":2},{"s":19660,"e":20190,"v":2},{"s":20190,"e":20880,"v":2},{"s":20880,"e":21110,"v":2},{"s":21110,"e":21430,"v":3},{"s":21430,"e":21540,"v":3},{"s":21540,"e":21760,"v":3},{"s":21760,"e":21860,"v":3},{"s":21860,"e":22530,"v":3},{"s":22530,"e":23080,"v":3},{"s":23080,"e":23130,"v":3},{"s":23130,"e":23410,"v":3},{"s":23410,"e":23740,"v":3},{"s":23740,"e":23990,"v":3},{"s":23990,"e":24280,"v":3},{"s":24280,"e":24860,"v":3},{"s":24860,"e":25300,"v":3},{"s":25300,"e":25380,"v":3},{"s":25380,"e":25660,"v":3},{"s":25710,"e":26000,"v":3},{"s":26000,"e":26380,"v":3},{"s":26380,"e":26460,"v":3},{"s":26460,"e":27020,"v":3},{"s":27020,"e":27480,"v":3},{"s":27480,"e":28060,"v":3},{"s":28060,"e":28370,"v":3},{"s":28370,"e":28400,"v":3},{"s":28400,"e":28860,"v":3},{"s":28860,"e":30040,"v":3},{"s":30040,"e":30400,"v":4},{"s":30400,"e":30520,"v":4},{"s":30520,"e":31000,"v":4},{"s":31000,"e":31480,"v":4},{"s":31480,"e":31840,"v":4},{"s":31840,"e":32040,"v":4},{"s":32040,"e":32920,"v":4},{"s":32920,"e":33520,"v":4},{"s":33520,"e":34980,"v":5},{"s":34980,"e":35270,"v":5},{"s":35270,"e":35320,"v":5},{"s":35320,"e":35760,"v":5},{"s":35760,"e":36020,"v":5},{"s":36020,"e":36800,"v":5},{"s":36800,"e":37190,"v":5},{"s":37190,"e":37690,"v":5},{"s":37690,"e":38030,"v":5},{"s":38030,"e":38130,"v":5},{"s":38130,"e":38470,"v":5},{"s":38470,"e":38890,"v":5},{"s":38890,"e":39150,"v":5},{"s":39150,"e":39780,"v":5},{"s":39780,"e":39890,"v":5},{"s":39890,"e":41140,"v":6},{"s":41140,"e":41430,"v":6},{"s":41430,"e":41550,"v":6},{"s":41550,"e":42130,"v":6},{"s":42130,"e":42710,"v":6},{"s":42710,"e":42960,"v":6},{"s":42960,"e":43450,"v":6},{"s":43450,"e":43450,"v":6},{"s":43450,"e":43850,"v":6},{"s":43850,"e":43870,"v":6},{"s":43870,"e":44190,"v":6},{"s":44190,"e":44430,"v":6},{"s":44430,"e":44740,"v":6},{"s":44740,"e":45510,"v":6},{"s":45510,"e":45920,"v":6},{"s":45920,"e":46050,"v":6},{"s":46050,"e":46250,"v":6},{"s":46250,"e":46610,"v":6},{"s":46610,"e":46940,"v":6},{"s":46940,"e":47100,"v":6},{"s":47100,"e":47630,"v":6},{"s":47630,"e":48680,"v":6},{"s":48680,"e":48980,"v":6},{"s":48980,"e":49800,"v":6},{"s":49800,"e":49900,"v":6},{"s":49900,"e":50820,"v":6},{"s":50870,"e":51010,"v":7},{"s":51010,"e":51290,"v":7},{"s":51290,"e":51540,"v":7},{"s":51540,"e":51760,"v":7},{"s":51760,"e":52430,"v":7},{"s":52430,"e":52870,"v":7},{"s":52870,"e":53530,"v":7},{"s":53530,"e":53560,"v":7},{"s":53560,"e":53870,"v":7},{"s":53870,"e":54030,"v":7},{"s":54030,"e":54310,"v":7},{"s":54310,"e":54460,"v":7},{"s":54460,"e":55650,"v":7},{"s":55650,"e":55840,"v":7},{"s":55840,"e":56290,"v":7},{"s":56290,"e":56450,"v":7},{"s":56450,"e":56680,"v":7},{"s":56680,"e":57220,"v":7},{"s":57220,"e":57380,"v":7},{"s":57380,"e":57780,"v":7},{"s":57780,"e":58100,"v":7},{"s":58100,"e":58190,"v":7},{"s":58190,"e":58380,"v":7},{"s":58380,"e":59110,"v":7},{"s":59110,"e":59350,"v":7},{"s":59350,"e":60090,"v":7},{"s":60090,"e":60140,"v":7},{"s":60140,"e":60450,"v":7},{"s":60450,"e":61620,"v":7},{"s":61620,"e":62080,"v":8},{"s":62080,"e":62990,"v":8},{"s":62990,"e":63260,"v":8},{"s":63260,"e":63620,"v":8},{"s":63620,"e":64710,"v":8},{"s":64710,"e":64800,"v":8},{"s":64800,"e":65200,"v":8},{"s":65200,"e":65990,"v":8},{"s":65990,"e":66440,"v":8},{"s":66440,"e":66530,"v":8},{"s":66530,"e":66810,"v":8},{"s":66810,"e":67080,"v":8},{"s":67080,"e":67260,"v":8},{"s":67260,"e":67630,"v":8},{"s":67630,"e":68030,"v":8},{"s":68030,"e":69020,"v":8},{"s":69020,"e":69360,"v":8},{"s":69360,"e":69480,"v":8},{"s":69480,"e":69760,"v":8},{"s":69760,"e":70230,"v":8},{"s":70230,"e":70900,"v":8},{"s":70900,"e":71260,"v":8},{"s":71260,"e":71730,"v":8},{"s":71730,"e":71800,"v":8},{"s":71800,"e":72170,"v":8},{"s":72170,"e":73370,"v":8},{"s":73370,"e":73550,"v":8},{"s":73550,"e":73930,"v":8},{"s":73930,"e":74100,"v":8},{"s":74100,"e":74490,"v":8},{"s":74490,"e":74830,"v":8},{"s":74830,"e":75030,"v":8},{"s":75030,"e":75430,"v":8},{"s":75430,"e":75460,"v":8},{"s":75510,"e":77280,"v":8},{"s":77280,"e":78550,"v":8},{"s":78550,"e":79040,"v":9},{"s":79040,"e":80290,"v":9},{"s":80290,"e":80370,"v":9},{"s":80370,"e":80920,"v":9},{"s":80920,"e":82450,"v":9},{"s":82450,"e":82460,"v":9},{"s":82460,"e":82460,"v":9},{"s":82460,"e":82460,"v":9},{"s":82460,"e":82460,"v":9},{"s":82460,"e":82460,"v":9},{"s":82460,"e":82460,"v":9},{"s":82460,"e":82460,"v":9},{"s":82460,"e":82460,"v":9},{"s":82460,"e":82460,"v":9},{"s":82460,"e":82460,"v":9},{"s":82460,"e":82460,"v":9},{"s":82460,"e":82800,"v":9},{"s":82800,"e":83840,"v":9},{"s":83840,"e":84340,"v":9},{"s":84340,"e":85170,"v":9},{"s":85170,"e":85270,"v":9},{"s":85270,"e":85510,"v":9},{"s":85510,"e":85670,"v":9},{"s":85670,"e":86940,"v":9},{"s":86940,"e":87370,"v":9},{"s":87370,"e":88090,"v":10},{"s":88090,"e":88320,"v":10},{"s":88320,"e":89100,"v":10},{"s":89100,"e":89430,"v":10},{"s":89430,"e":90140,"v":10},{"s":90140,"e":90220,"v":10},{"s":90220,"e":91140,"v":10},{"s":91140,"e":91480,"v":10},{"s":91480,"e":92460,"v":10},{"s":92460,"e":92920,"v":10},{"s":92920,"e":93760,"v":10},{"s":93760,"e":94190,"v":10},{"s":94190,"e":94540,"v":10},{"s":94540,"e":94730,"v":10},{"s":94730,"e":94790,"v":11},{"s":94790,"e":95340,"v":11},{"s":95340,"e":96050,"v":11},{"s":96050,"e":96610,"v":11},{"s":96610,"e":96770,"v":11},{"s":96770,"e":97150,"v":11},{"s":97150,"e":98270,"v":11},{"s":98270,"e":98410,"v":11},{"s":98410,"e":98520,"v":11},{"s":98520,"e":99060,"v":11},{"s":99110,"e":99400,"v":11},{"s":99400,"e":100160,"v":11},{"s":100160,"e":100600,"v":11},{"s":100600,"e":101240,"v":11},{"s":101240,"e":101760,"v":11},{"s":101760,"e":101770,"v":11},{"s":101770,"e":102110,"v":11},{"s":102110,"e":102350,"v":11},{"s":102350,"e":102680,"v":11},{"s":102680,"e":103360,"v":11},{"s":103360,"e":103860,"v":11},{"s":103860,"e":103970,"v":11},{"s":103970,"e":104160,"v":12},{"s":104160,"e":104530,"v":12},{"s":104530,"e":104830,"v":12},{"s":104830,"e":105170,"v":12},{"s":105170,"e":105460,"v":12},{"s":105460,"e":105700,"v":12},{"s":105700,"e":106860,"v":12},{"s":106860,"e":107340,"v":12},{"s":107340,"e":107820,"v":12},{"s":107820,"e":108060,"v":12},{"s":108060,"e":108660,"v":12},{"s":108660,"e":109560,"v":12},{"s":109560,"e":110020,"v":12},{"s":110020,"e":110430,"v":12},{"s":110430,"e":110530,"v":12},{"s":110530,"e":111120,"v":12},{"s":111120,"e":111770,"v":12},{"s":111770,"e":112820,"v":12},{"s":112820,"e":113260,"v":12},{"s":113260,"e":113320,"v":12},{"s":113320,"e":113660,"v":12},{"s":113660,"e":113940,"v":12},{"s":113940,"e":114260,"v":12},{"s":114260,"e":114980,"v":12},{"s":114980,"e":115360,"v":12},{"s":115360,"e":116240,"v":12},{"s":116240,"e":116860,"v":12},{"s":116860,"e":117690,"v":12},{"s":117690,"e":118150,"v":12},{"s":118150,"e":118390,"v":12},{"s":118390,"e":118580,"v":12},{"s":118580,"e":119890,"v":12},{"s":119890,"e":120500,"v":12},{"s":120500,"e":120820,"v":12},{"s":120820,"e":121390,"v":12},{"s":121390,"e":121710,"v":12},{"s":121710,"e":121930,"v":12},{"s":121930,"e":122260,"v":13},{"s":122260,"e":122520,"v":13},{"s":122520,"e":122800,"v":13},{"s":122800,"e":123090,"v":13},{"s":123090,"e":123910,"v":13},{"s":123910,"e":124940,"v":13},{"s":124990,"e":125280,"v":13},{"s":125280,"e":125660,"v":13},{"s":125660,"e":125900,"v":13},{"s":125900,"e":126260,"v":13},{"s":126260,"e":126820,"v":13},{"s":126820,"e":127650,"v":13},{"s":127650,"e":127990,"v":13},{"s":127990,"e":128260,"v":13},{"s":128260,"e":129300,"v":13},{"s":129300,"e":129850,"v":13},{"s":129850,"e":130410,"v":13},{"s":130410,"e":131350,"v":13},{"s":131350,"e":132070,"v":13},{"s":132070,"e":132180,"v":13},{"s":132180,"e":132330,"v":13},{"s":132330,"e":132480,"v":13},{"s":132480,"e":132580,"v":13},{"s":132580,"e":133000,"v":13},{"s":133000,"e":133320,"v":13},{"s":133320,"e":133650,"v":13},{"s":133650,"e":133960,"v":13},{"s":133960,"e":135290,"v":13},{"s":135290,"e":135630,"v":13},{"s":135630,"e":135870,"v":13},{"s":135870,"e":136180,"v":13},{"s":136180,"e":137300,"v":13},{"s":137300,"e":137300,"v":13},{"s":137300,"e":137300,"v":13},{"s":137300,"e":137300,"v":13},{"s":137300,"e":137300,"v":13}]</script>
+<script>(function () {
+  "use strict";
+
+  var timings = JSON.parse(document.getElementById("timings").textContent);
+  var audio = document.getElementById("audio");
+  var playBtn = document.getElementById("play");
+  var seek = document.getElementById("seek");
+  var words = Array.prototype.slice.call(document.querySelectorAll("w"));
+  var verses = Array.prototype.slice.call(document.querySelectorAll(".verse"));
+
+  var current = -1;       // index of the highlighted word
+  var currentVerse = -1;
+  var autoScroll = true;
+  var scrollTimer = null;
+  var storageKey = "dr:" + location.pathname;
+
+  // --- position lookup -----------------------------------------------------
+  // Binary search rather than a forward pointer: correct after any seek,
+  // and cheap enough to run on every timeupdate.
+  function indexAt(ms) {
+    var lo = 0, hi = timings.length - 1, best = -1;
+    while (lo <= hi) {
+      var mid = (lo + hi) >> 1;
+      if (timings[mid].s <= ms) { best = mid; lo = mid + 1; }
+      else { hi = mid - 1; }
+    }
+    return best;
+  }
+
+  function highlight(index) {
+    if (index === current) return;
+    if (current >= 0 && words[current]) words[current].classList.remove("on");
+    current = index;
+    if (current < 0 || !words[current]) return;
+    words[current].classList.add("on");
+
+    var v = timings[current].v;
+    if (v !== currentVerse) {
+      if (currentVerse >= 0 && verses[currentVerse]) {
+        verses[currentVerse].classList.remove("active");
+      }
+      currentVerse = v;
+      if (verses[currentVerse]) {
+        verses[currentVerse].classList.add("active");
+        if (autoScroll) {
+          verses[currentVerse].scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+          });
+        }
+      }
+    }
+  }
+
+  // --- playback ------------------------------------------------------------
+  audio.addEventListener("timeupdate", function () {
+    var ms = audio.currentTime * 1000;
+    highlight(indexAt(ms));
+    if (audio.duration) {
+      seek.value = Math.round((audio.currentTime / audio.duration) * 1000);
+    }
+    try { localStorage.setItem(storageKey, String(audio.currentTime)); } catch (e) {}
+  });
+
+  playBtn.addEventListener("click", function () {
+    if (audio.paused) { audio.play(); } else { audio.pause(); }
+  });
+
+  audio.addEventListener("play", function () {
+    playBtn.innerHTML = "&#10073;&#10073;";
+    playBtn.setAttribute("aria-label", "Pause");
+  });
+
+  audio.addEventListener("pause", function () {
+    playBtn.innerHTML = "&#9654;";
+    playBtn.setAttribute("aria-label", "Play");
+  });
+
+  audio.addEventListener("ended", function () {
+    try { localStorage.removeItem(storageKey); } catch (e) {}
+  });
+
+  seek.addEventListener("input", function () {
+    if (!audio.duration) return;
+    audio.currentTime = (seek.value / 1000) * audio.duration;
+  });
+
+  // --- tap a word to jump there -------------------------------------------
+  document.addEventListener("click", function (event) {
+    var target = event.target.closest ? event.target.closest("w") : null;
+    if (!target) return;
+    var index = parseInt(target.getAttribute("data-w"), 10);
+    if (isNaN(index) || !timings[index]) return;
+    audio.currentTime = timings[index].s / 1000;
+    autoScroll = true;
+    if (audio.paused) audio.play();
+  });
+
+  // --- yield to manual scrolling ------------------------------------------
+  // Auto-scroll fighting the reader is the fastest way to make the page
+  // feel hostile. Any touch or wheel suspends it for 3 seconds.
+  function suspendAutoScroll() {
+    autoScroll = false;
+    if (scrollTimer) clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(function () { autoScroll = true; }, 3000);
+  }
+
+  window.addEventListener("wheel", suspendAutoScroll, { passive: true });
+  window.addEventListener("touchmove", suspendAutoScroll, { passive: true });
+
+  // --- resume where she left off (today only, silently) --------------------
+  audio.addEventListener("loadedmetadata", function () {
+    var saved = null;
+    try { saved = localStorage.getItem(storageKey); } catch (e) {}
+    if (!saved) return;
+    var t = parseFloat(saved);
+    // Ignore a position within 5s of the end - that reading is finished.
+    if (isFinite(t) && t > 1 && t < audio.duration - 5) {
+      audio.currentTime = t;
+      highlight(indexAt(t * 1000));
+    }
+  });
+
+  // --- lock screen controls -----------------------------------------------
+  if ("mediaSession" in navigator) {
+    navigator.mediaSession.setActionHandler("play", function () { audio.play(); });
+    navigator.mediaSession.setActionHandler("pause", function () { audio.pause(); });
+    navigator.mediaSession.setActionHandler("seekbackward", function () {
+      audio.currentTime = Math.max(0, audio.currentTime - 10);
+    });
+    navigator.mediaSession.setActionHandler("seekforward", function () {
+      audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 10);
+    });
+  }
+})();
+</script>
+<script>
+if ("mediaSession" in navigator) {
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title: "Wednesday, August 5, 2026",
+    artist: "1 Corinthians 16:4-12 \u00b7 Matthew 21:28-32",
+    album: "Daily Reading"
+  });
+}
+</script>
+</body>
+</html>
