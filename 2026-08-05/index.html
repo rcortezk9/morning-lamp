@@ -17,6 +17,7 @@
   --verse: rgba(196, 148, 62, 0.11);
   --rule: rgba(0, 0, 0, 0.10);
   --bar: rgba(250, 246, 239, 0.94);
+  --accent: #a8762a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,6 +29,7 @@
     --verse: rgba(214, 168, 84, 0.09);
     --rule: rgba(255, 255, 255, 0.10);
     --bar: rgba(26, 23, 20, 0.94);
+    --accent: #d6a854;
   }
 }
 
@@ -132,6 +134,55 @@ w.on { background: var(--word); }
   cursor: pointer;
 }
 
+.synthesis {
+  margin-top: 3rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--rule);
+}
+
+.synthesis h2 {
+  font-family: Georgia, "Iowan Old Style", serif;
+  font-size: 0.78rem;
+  font-weight: normal;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 1.1rem;
+}
+
+.synthesis .question {
+  border-left: 2px solid var(--accent);
+  background: var(--verse);
+  border-radius: 3px;
+  padding: 0.7rem 0.95rem;
+  margin-bottom: 1.2rem;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--fg);
+}
+
+.synthesis p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--fg);
+  margin: 0 0 0.9rem;
+}
+
+.synthesis p:last-child { margin-bottom: 0; }
+
+.synthesis .posture {
+  margin-top: 1.3rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.synthesis .posture strong {
+  color: var(--accent);
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
 .study-notes {
   margin-top: 2.6rem;
   padding-top: 1.4rem;
@@ -191,6 +242,7 @@ w.on { background: var(--word); }
 <div class="refs">1 Corinthians 16:4-12 &nbsp;·&nbsp; Matthew 21:28-32</div>
 </header>
 <section class="reading"><span class="verse" data-v="0"><span class="vn">4</span><w data-w="0">But</w> <w data-w="1">if</w> <w data-w="2">it</w> <w data-w="3">is</w> <w data-w="4">fitting</w> <w data-w="5">that</w> <w data-w="6">I</w> <w data-w="7">go</w> <w data-w="8">also,</w> <w data-w="9">they</w> <w data-w="10">will</w> <w data-w="11">go</w> <w data-w="12">with</w> <w data-w="13">me.</w></span> <span class="verse" data-v="1"><span class="vn">5</span><w data-w="14">Now</w> <w data-w="15">I</w> <w data-w="16">will</w> <w data-w="17">come</w> <w data-w="18">to</w> <w data-w="19">you</w> <w data-w="20">when</w> <w data-w="21">I</w> <w data-w="22">pass</w> <w data-w="23">through</w> <w data-w="24">Macedonia</w> <w data-w="25">(for</w> <w data-w="26">I</w> <w data-w="27">am</w> <w data-w="28">passing</w> <w data-w="29">through</w> <w data-w="30">Macedonia).</w></span> <span class="verse" data-v="2"><span class="vn">6</span><w data-w="31">And</w> <w data-w="32">it</w> <w data-w="33">may</w> <w data-w="34">be</w> <w data-w="35">that</w> <w data-w="36">I</w> <w data-w="37">will</w> <w data-w="38">remain,</w> <w data-w="39">or</w> <w data-w="40">even</w> <w data-w="41">spend</w> <w data-w="42">the</w> <w data-w="43">winter</w> <w data-w="44">with</w> <w data-w="45">you,</w> <w data-w="46">that</w> <w data-w="47">you</w> <w data-w="48">may</w> <w data-w="49">send</w> <w data-w="50">me</w> <w data-w="51">on</w> <w data-w="52">my</w> <w data-w="53">journey,</w> <w data-w="54">wherever</w> <w data-w="55">I</w> <w data-w="56">go.</w></span> <span class="verse" data-v="3"><span class="vn">7</span><w data-w="57">For</w> <w data-w="58">I</w> <w data-w="59">do</w> <w data-w="60">not</w> <w data-w="61">wish</w> <w data-w="62">to</w> <w data-w="63">see</w> <w data-w="64">you</w> <w data-w="65">now</w> <w data-w="66">on</w> <w data-w="67">the</w> <w data-w="68">way;</w> <w data-w="69">but</w> <w data-w="70">I</w> <w data-w="71">hope</w> <w data-w="72">to</w> <w data-w="73">stay</w> <w data-w="74">a</w> <w data-w="75">while</w> <w data-w="76">with</w> <w data-w="77">you,</w> <w data-w="78">if</w> <w data-w="79">the</w> <w data-w="80">Lord</w> <w data-w="81">permits.</w></span> <span class="verse" data-v="4"><span class="vn">8</span><w data-w="82">But</w> <w data-w="83">I</w> <w data-w="84">will</w> <w data-w="85">tarry</w> <w data-w="86">in</w> <w data-w="87">Ephesus</w> <w data-w="88">until</w> <w data-w="89">Pentecost.</w></span> <span class="verse" data-v="5"><span class="vn">9</span><w data-w="90">For</w> <w data-w="91">a</w> <w data-w="92">great</w> <w data-w="93">and</w> <w data-w="94">effective</w> <w data-w="95">door</w> <w data-w="96">has</w> <w data-w="97">opened</w> <w data-w="98">to</w> <w data-w="99">me,</w> <w data-w="100">and</w> <w data-w="101">there</w> <w data-w="102">are</w> <w data-w="103">many</w> <w data-w="104">adversaries.</w></span> <span class="verse" data-v="6"><span class="vn">10</span><w data-w="105">And</w> <w data-w="106">if</w> <w data-w="107">Timothy</w> <w data-w="108">comes,</w> <w data-w="109">see</w> <w data-w="110">that</w> <w data-w="111">he</w> <w data-w="112">may</w> <w data-w="113">be</w> <w data-w="114">with</w> <w data-w="115">you</w> <w data-w="116">without</w> <w data-w="117">fear;</w> <w data-w="118">for</w> <w data-w="119">he</w> <w data-w="120">does</w> <w data-w="121">the</w> <w data-w="122">work</w> <w data-w="123">of</w> <w data-w="124">the</w> <w data-w="125">Lord,</w> <w data-w="126">as</w> <w data-w="127">I</w> <w data-w="128">also</w> <w data-w="129">do</w> <w data-w="130">.</w></span> <span class="verse" data-v="7"><span class="vn">11</span><w data-w="131">Therefore</w> <w data-w="132">let</w> <w data-w="133">no</w> <w data-w="134">one</w> <w data-w="135">despise</w> <w data-w="136">him.</w> <w data-w="137">But</w> <w data-w="138">send</w> <w data-w="139">him</w> <w data-w="140">on</w> <w data-w="141">his</w> <w data-w="142">journey</w> <w data-w="143">in</w> <w data-w="144">peace,</w> <w data-w="145">that</w> <w data-w="146">he</w> <w data-w="147">may</w> <w data-w="148">come</w> <w data-w="149">to</w> <w data-w="150">me;</w> <w data-w="151">for</w> <w data-w="152">I</w> <w data-w="153">am</w> <w data-w="154">waiting</w> <w data-w="155">for</w> <w data-w="156">him</w> <w data-w="157">with</w> <w data-w="158">the</w> <w data-w="159">brethren.</w></span> <span class="verse" data-v="8"><span class="vn">12</span><w data-w="160">Now</w> <w data-w="161">concerning</w> <w data-w="162">our</w> <w data-w="163">brother</w> <w data-w="164">Apollos,</w> <w data-w="165">I</w> <w data-w="166">strongly</w> <w data-w="167">urged</w> <w data-w="168">him</w> <w data-w="169">to</w> <w data-w="170">come</w> <w data-w="171">to</w> <w data-w="172">you</w> <w data-w="173">with</w> <w data-w="174">the</w> <w data-w="175">brethren,</w> <w data-w="176">but</w> <w data-w="177">he</w> <w data-w="178">was</w> <w data-w="179">quite</w> <w data-w="180">unwilling</w> <w data-w="181">to</w> <w data-w="182">come</w> <w data-w="183">at</w> <w data-w="184">this</w> <w data-w="185">time;</w> <w data-w="186">however,</w> <w data-w="187">he</w> <w data-w="188">will</w> <w data-w="189">come</w> <w data-w="190">when</w> <w data-w="191">he</w> <w data-w="192">has</w> <w data-w="193">a</w> <w data-w="194">convenient</w> <w data-w="195">time.</w></span> </section><section class="reading"><span class="verse" data-v="9"><span class="vn">28</span><w data-w="196">But</w> <w data-w="197">what</w> <w data-w="198">do</w> <w data-w="199">you</w> <w data-w="200">think?</w> <w data-w="201">A</w> <w data-w="202">man</w> <w data-w="203">had</w> <w data-w="204">two</w> <w data-w="205">sons,</w> <w data-w="206">and</w> <w data-w="207">he</w> <w data-w="208">came</w> <w data-w="209">to</w> <w data-w="210">the</w> <w data-w="211">first</w> <w data-w="212">and</w> <w data-w="213">said,</w> <w data-w="214">Son,</w> <w data-w="215">go,</w> <w data-w="216">work</w> <w data-w="217">today</w> <w data-w="218">in</w> <w data-w="219">my</w> <w data-w="220">vineyard.&#x27;</w></span> <span class="verse" data-v="10"><span class="vn">29</span><w data-w="221">He</w> <w data-w="222">answered</w> <w data-w="223">and</w> <w data-w="224">said,</w> <w data-w="225">I</w> <w data-w="226">will</w> <w data-w="227">not,&#x27;</w> <w data-w="228">but</w> <w data-w="229">afterward</w> <w data-w="230">he</w> <w data-w="231">regretted</w> <w data-w="232">it</w> <w data-w="233">and</w> <w data-w="234">went.</w></span> <span class="verse" data-v="11"><span class="vn">30</span><w data-w="235">Then</w> <w data-w="236">he</w> <w data-w="237">came</w> <w data-w="238">to</w> <w data-w="239">the</w> <w data-w="240">second</w> <w data-w="241">and</w> <w data-w="242">said</w> <w data-w="243">likewise.</w> <w data-w="244">And</w> <w data-w="245">he</w> <w data-w="246">answered</w> <w data-w="247">and</w> <w data-w="248">said,</w> <w data-w="249">I</w> <w data-w="250">go,</w> <w data-w="251">sir,&#x27;</w> <w data-w="252">but</w> <w data-w="253">he</w> <w data-w="254">did</w> <w data-w="255">not</w> <w data-w="256">go.</w></span> <span class="verse" data-v="12"><span class="vn">31</span><w data-w="257">Which</w> <w data-w="258">of</w> <w data-w="259">the</w> <w data-w="260">two</w> <w data-w="261">did</w> <w data-w="262">the</w> <w data-w="263">will</w> <w data-w="264">of</w> <w data-w="265">his</w> <w data-w="266">father?</w> <w data-w="267">They</w> <w data-w="268">said</w> <w data-w="269">to</w> <w data-w="270">Him,</w> <w data-w="271">The</w> <w data-w="272">first.</w> <w data-w="273">Jesus</w> <w data-w="274">said</w> <w data-w="275">to</w> <w data-w="276">them,</w> <w data-w="277">Assuredly,</w> <w data-w="278">I</w> <w data-w="279">say</w> <w data-w="280">to</w> <w data-w="281">you</w> <w data-w="282">that</w> <w data-w="283">tax</w> <w data-w="284">collectors</w> <w data-w="285">and</w> <w data-w="286">harlots</w> <w data-w="287">enter</w> <w data-w="288">the</w> <w data-w="289">kingdom</w> <w data-w="290">of</w> <w data-w="291">God</w> <w data-w="292">before</w> <w data-w="293">you.</w></span> <span class="verse" data-v="13"><span class="vn">32</span><w data-w="294">For</w> <w data-w="295">John</w> <w data-w="296">came</w> <w data-w="297">to</w> <w data-w="298">you</w> <w data-w="299">in</w> <w data-w="300">the</w> <w data-w="301">way</w> <w data-w="302">of</w> <w data-w="303">righteousness,</w> <w data-w="304">and</w> <w data-w="305">you</w> <w data-w="306">did</w> <w data-w="307">not</w> <w data-w="308">believe</w> <w data-w="309">him;</w> <w data-w="310">but</w> <w data-w="311">tax</w> <w data-w="312">collectors</w> <w data-w="313">and</w> <w data-w="314">harlots</w> <w data-w="315">believed</w> <w data-w="316">him;</w> <w data-w="317">and</w> <w data-w="318">when</w> <w data-w="319">you</w> <w data-w="320">saw</w> <w data-w="321">it,</w> <w data-w="322">you</w> <w data-w="323">did</w> <w data-w="324">not</w> <w data-w="325">afterward</w> <w data-w="326">relent</w> <w data-w="327">and</w> <w data-w="328">believe</w> <w data-w="329">him.</w></span> </section>
+<section class="synthesis"><h2>Daily Formation Synthesis</h2><div class="question">What is the Church teaching your soul today?</div><p>Today the Church calls you to stop grading yourself on your answers. You have given a great many of them — to God, in prayer, in the promises you make at the end of a Liturgy when everything seems possible — and the Father is not standing at the door listening. He is in the vineyard, watching who arrives. This is not a threat; it is a mercy, because it means the answer you are ashamed of having given is not the record. The son who said &quot;I will not&quot; is the one Christ commends, and he is commended for something so small it barely makes a story: afterward, he went. Whatever you refused this week is still open. Whatever you promised is still waiting. Neither one is settled by anything you said.</p><p class="posture"><strong>Ascetic posture for today:</strong> Do one thing you have already agreed to do, without telling anyone you are doing it.</p></section>
 <section class="study-notes"><h2>From the Orthodox Study Bible</h2><div class="note"><span class="note-ref">Matthew 21:31</span><span class="note-text">Using their own principles, the elders convict themselves in their answer to Christ’s parable.</span></div></section>
 
 </main>
